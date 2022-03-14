@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom'
 import Routes from './routes/Routes'
+import './styles/global.css'
 import './styles/tailwind.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
           <BrowserRouter>
             <Routes />
           </BrowserRouter>
+
         </div>
       </div>
     </div>
