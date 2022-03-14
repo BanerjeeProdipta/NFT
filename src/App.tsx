@@ -11,14 +11,13 @@ function App() {
         background: 'linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%)',
       }}
     >
-      <div className="container p-6 mx-auto">
-        <div className="flex flex-col items-center prose-p:font-medium text-white/50 prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
-          <p>hi</p>
-          <h2>hi</h2>
-          <BrowserRouter>
-            <Routes />
-          </BrowserRouter>
-
+      <div className="container p-4 mx-auto">
+        <div className="flex flex-col justify-center">
+          <div className="prose-p:font-medium text-white/50 prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
+            <BrowserRouter>
+              <Routes />
+            </BrowserRouter>
+          </div>
         </div>
       </div>
     </div>
