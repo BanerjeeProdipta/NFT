@@ -1,4 +1,4 @@
-import Button from '../../components/ui/Button'
+import PrimaryButton from '../../components/ui/PrimaryButton'
 import homeData from '../../utils/data/homeData'
 
 function Home() {
@@ -12,7 +12,7 @@ function Home() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit.
         </p>
         <div className="flex items-center py-4 space-x-4">
-          <Button text="Explore Now" />
+          <PrimaryButton text="Explore Now" />
           <button
             type="button"
             className="px-4 py-2 text-white transition delay-200 rounded-lg bg-white/10 hover:bg-white hover:text-primaryLight whitespace-nowrap"
