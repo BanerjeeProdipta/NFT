@@ -70,7 +70,7 @@ function Navbar() {
               </NavLink>
             </div>
           </div>
-          {/* LARGE screen links ENDS */}
+          {/* Medium screen links ENDS */}
 
           <div className="flex justify-end flex-1 md:hidden">
             <button
@@ -88,7 +88,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* SMALL screen links STARTS */}
+        {/* small screen links STARTS */}
         <div className="my-4 space-y-2 md:hidden">
           <button
             type="button"
@@ -137,7 +137,7 @@ function Navbar() {
           </NavLink>
 
         </div>
-        {/* SMALL screen links ENDS */}
+        {/* small screen links ENDS */}
 
       </div>
       <CustomModal open={showSearchModal} onClose={handleModalOnClose}>
