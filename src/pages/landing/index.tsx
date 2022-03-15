@@ -1,6 +1,10 @@
+import Home from './Home'
+
 function Landing() {
   return (
-    <div>Landing</div>
+    <div>
+      <Home />
+    </div>
   )
 }
 

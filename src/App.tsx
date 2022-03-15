@@ -13,7 +13,7 @@ function App() {
     >
       <div className="container p-4 mx-auto">
         <div className="flex flex-col justify-center">
-          <div className="prose-p:font-medium text-white/50 prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
+          <div className="prose-p:font-medium prose-p:text-[20px] text-white/50 prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
             <BrowserRouter>
               <Routes />
             </BrowserRouter>
