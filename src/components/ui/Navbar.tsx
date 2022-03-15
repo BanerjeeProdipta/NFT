@@ -29,9 +29,53 @@ function Navbar() {
             </NavLink>
           </div>
 
+          <button type="button" className="relative hidden mx-8 md:block" onClick={() => setShowSearchModal(true)}>
+            <div className="absolute top-2.5 left-3">
+              <AiOutlineSearch size={22} />
+            </div>
+            <input
+              type="text"
+              className="flex p-2 pl-10 text-xl text-white rounded-md lg:w-full flex-0 md:w-4 focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10"
+              placeholder="Search items and collections"
+            />
+          </button>
+
+          {/* Medium screen links STARTS */}
+          <div className="justify-end hidden md:flex md:items-center md:text-lg lg:text-xl">
+
+            <div className="flex space-x-4">
+              <NavLink
+                to="/collections"
+                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
+              >
+                Collections
+              </NavLink>
+              <NavLink
+                to="/feature"
+                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
+              >
+                Feature
+              </NavLink>
+              <NavLink
+                to="/faq"
+                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
+              >
+                FAQ
+              </NavLink>
+              <NavLink
+                to="/select-wallet"
+                className="px-4 py-1 font-medium text-white transition duration-1000 rounded-md lg:px-4 whitespace-nowrap bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr"
+              >
+                Select Wallet
+              </NavLink>
+            </div>
+          </div>
+          {/* LARGE screen links ENDS */}
+
           <div className="flex justify-end flex-1 md:hidden">
             <button
               type="button"
+              tabIndex={-1}
               className="p-1 text-white transition duration-500 ease-in-out border border-transparent border-white rounded cursor-pointer md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -42,53 +86,19 @@ function Navbar() {
               )}
             </button>
           </div>
-
-          {/* LARGE screen links STARTS */}
-          <div className="justify-between flex-1 hidden md:flex md:items-center">
-            <button type="button" className="relative mx-8" onClick={() => setShowSearchModal(true)}>
-              <div className="absolute top-2 left-3">
-                <AiOutlineSearch size={22} />
-              </div>
-              <input
-                type="text"
-                className="flex p-2 pl-10 text-xl text-white rounded-md lg:w-full flex-0 md:w-4 focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10"
-                placeholder="Search items and collections"
-              />
-            </button>
-            <div className="flex space-x-4 text-xl">
-              <NavLink
-                to="/collections"
-                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 text-md hover:text-primaryLight"
-              >
-                Collections
-              </NavLink>
-              <NavLink
-                to="/feature"
-                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 text-md hover:text-primaryLight"
-              >
-                Feature
-              </NavLink>
-              <NavLink
-                to="/faq"
-                className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 text-md hover:text-primaryLight"
-              >
-                FAQ
-              </NavLink>
-              <NavLink
-                to="/select-wallet"
-                className="px-4 py-1 font-medium text-white transition duration-1000 rounded-md lg:px-4 text-md whitespace-nowrap bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr"
-              >
-                Select Wallet
-              </NavLink>
-            </div>
-          </div>
-          {/* LARGE screen links ENDS */}
         </div>
 
         {/* SMALL screen links STARTS */}
         <div className="my-4 space-y-2 md:hidden">
-          <button type="button" className="relative" onClick={() => setShowSearchModal(true)}>
-            <div className="absolute top-2 left-3">
+          <button
+            type="button"
+            className="relative w-full p-1"
+            onClick={() => {
+              setIsOpen(false)
+              setShowSearchModal(true)
+            }}
+          >
+            <div className="absolute top-3 left-3">
               <AiOutlineSearch size={22} />
             </div>
             <input
@@ -137,6 +147,7 @@ function Navbar() {
           </div>
           <input
             type="text"
+            id="search-input"
             className="w-full p-2 pl-10 text-white rounded-md focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10"
             placeholder="Search items and collections"
           />

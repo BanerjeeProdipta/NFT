@@ -36,14 +36,10 @@ function CustomModal({
       }}
     >
       <Fade in={open}>
-        <div className="relative flex flex-1 max-w-xl p-8 text-white rounded-md bg-bgRight/40">
+        <div className="relative flex flex-1 max-w-xl p-8 mr-4 text-white rounded-md bg-bgRight/40">
           <button
             type="button"
-            className="absolute z-10 inline-block p-1 transition duration-300 ease-in-out rounded-full cursor-pointer bg-bgRight"
-            style={{
-              right: '-18px',
-              top: '-18px',
-            }}
+            className="absolute z-10 inline-block p-1 transition duration-300 ease-in-out rounded-full cursor-pointer bg-bgRight right-[-18px] top-[-18px]"
             onClick={onClose}
           >
             <AiOutlineClose className="w-6 h-6 text-white fill-current" />
