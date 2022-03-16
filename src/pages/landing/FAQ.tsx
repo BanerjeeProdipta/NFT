@@ -3,7 +3,7 @@ import faqData from '../../utils/data/faqData'
 
 function FAQ() {
   return (
-    <div className="space-y-4">
+    <div id="faq" className="space-y-4">
       <div className="space-y-2">
         <h2 className="text-center">
           Frequently Asked
