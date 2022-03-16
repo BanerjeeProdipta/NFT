@@ -3,6 +3,7 @@ import Collection from './Collection'
 import FeaturedArts from './FeaturedArts'
 import Home from './Home'
 import Sponsored from './Sponsored'
+import TopCreator from './TopCreator'
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
       <AboutUs />
       <Collection />
       <FeaturedArts />
+      <TopCreator />
     </div>
   )
 }
