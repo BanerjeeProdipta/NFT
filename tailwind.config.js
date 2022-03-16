@@ -18,6 +18,9 @@ module.exports = {
                 bgRight: '#181E41',
                 primaryDark: '#671AE4',
                 primaryLight: '#B75CFF'
+            },
+            screens: {
+                'xs': '320px'
             }
         },
     },
