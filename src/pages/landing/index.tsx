@@ -1,5 +1,6 @@
 import AboutUs from './AboutUs'
 import Collection from './Collection'
+import FeaturedArts from './FeaturedArts'
 import Home from './Home'
 import Sponsored from './Sponsored'
 
@@ -10,6 +11,7 @@ function Landing() {
       <Sponsored />
       <AboutUs />
       <Collection />
+      <FeaturedArts />
     </div>
   )
 }

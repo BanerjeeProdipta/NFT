@@ -20,7 +20,6 @@ function App() {
           >
             <Navbar />
           </div>
-
           <div className="container p-4 mx-auto">
             <div className="flex flex-col items-center justify-center">
               <div className="max-w-6xl mt-12 sm:mt-16 lg:mt-32">
@@ -29,7 +28,6 @@ function App() {
             </div>
           </div>
         </div>
-
       </BrowserRouter>
     </div>
   )

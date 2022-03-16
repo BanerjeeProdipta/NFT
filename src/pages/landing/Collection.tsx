@@ -34,18 +34,16 @@ function Collection() {
             )
         ))}
       </div>
-      <div>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          {arts.map((art) => (
-            <ArtCard
-              key={art.img}
-              img={art.img}
-              author={art.author}
-              price={art.price}
-              name={art.name}
-            />
-          ))}
-        </div>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        {arts.map((art) => (
+          <ArtCard
+            key={art.img}
+            img={art.img}
+            author={art.author}
+            price={art.price}
+            name={art.name}
+          />
+        ))}
       </div>
     </div>
   )
