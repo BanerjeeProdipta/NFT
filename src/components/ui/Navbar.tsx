@@ -44,30 +44,30 @@ function Navbar() {
           <div className="justify-end hidden md:flex md:items-center md:text-lg lg:text-xl">
 
             <div className="flex space-x-4">
-              <NavLink
-                to="/collections"
+              <a
+                href="#collections"
                 className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
               >
                 Collections
-              </NavLink>
-              <NavLink
-                to="/feature"
+              </a>
+              <a
+                href="#featured-arts"
                 className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
               >
                 Feature
-              </NavLink>
-              <NavLink
-                to="/faq"
+              </a>
+              <a
+                href="#faq"
                 className="px-4 py-1 font-medium text-white transition duration-1000 rounded lg:px-4 hover:text-primaryLight"
               >
                 FAQ
-              </NavLink>
-              <NavLink
-                to="/select-wallet"
+              </a>
+              <a
+                href="#select-wallet"
                 className="px-4 py-1 font-medium text-white transition duration-1000 rounded-md lg:px-4 whitespace-nowrap bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr"
               >
                 Select Wallet
-              </NavLink>
+              </a>
             </div>
           </div>
           {/* Medium screen links ENDS */}
@@ -107,34 +107,34 @@ function Navbar() {
               placeholder="Search items and collections"
             />
           </button>
-          <NavLink
+          <a
             onClick={handleLinkOnClick}
-            to="/collections"
+            href="#collections"
             className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
           >
             Collections
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             onClick={handleLinkOnClick}
-            to="/feature"
+            href="#featured-arts"
             className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
           >
             Feature
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             onClick={handleLinkOnClick}
-            to="/faq"
+            href="#faq"
             className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
           >
             FAQ
-          </NavLink>
-          <NavLink
+          </a>
+          <a
             onClick={handleLinkOnClick}
-            to="/select-wallet"
+            href="#select-wallet"
             className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
           >
             Select Wallet
-          </NavLink>
+          </a>
 
         </div>
         {/* small screen links ENDS */}

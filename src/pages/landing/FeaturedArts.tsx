@@ -3,7 +3,7 @@ import featuredArts from '../../utils/data/featuredArts'
 
 function FeaturedArts() {
   return (
-    <div className="space-y-4">
+    <div id="featured-arts" className="space-y-4">
       <div className="space-y-2">
         <h2 className="text-center">Featured Artworks</h2>
         <p className="text-center">
