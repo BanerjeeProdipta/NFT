@@ -17,25 +17,25 @@ function Collection() {
         </p>
       </div>
 
-      <div className="flex justify-between space-x-2 text-white lg:space-x-4">
+      <div className="justify-between text-white sm:flex">
         {tabItems.map((item) => (
           selected === item
             ? (
               <PrimaryButton
                 key={item}
                 text={item}
-                className="w-full"
+                className="w-full m-2"
               />
             )
             : (
-              <button key={item} type="button" onClick={() => setSelected(item)} className="w-full py-2 rounded-lg bg-white/20">
+              <button key={item} type="button" onClick={() => setSelected(item)} className="w-full py-2 m-2 rounded-lg bg-white/20">
                 {item}
               </button>
             )
         ))}
       </div>
       <div>
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {arts.map((art) => (
             <ArtCard
               key={art.img}
