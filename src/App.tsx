@@ -20,7 +20,7 @@ function App() {
           >
             <Navbar />
           </div>
-          <div className="container p-4 mx-auto">
+          <div className="p-4 lg:container lg:mx-auto">
             <div className="flex flex-col items-center justify-center">
               <div className="max-w-6xl mt-12 sm:mt-16 lg:mt-32">
                 <Routes />

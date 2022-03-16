@@ -13,7 +13,7 @@ function Navbar() {
   const handleModalOnClose = () => setShowSearchModal(false)
 
   return (
-    <nav className="container z-50 justify-center px-4 mx-auto lg:flex">
+    <nav className="z-50 justify-center px-4 lg:container lg:mx-auto lg:flex">
       <div
         ref={ref}
         className="max-w-6xl py-2 relative overflow-hidden transition-all duration-500 ease-in-out md:min-h-[80px]"
