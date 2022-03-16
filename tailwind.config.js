@@ -20,7 +20,7 @@ module.exports = {
                 primaryLight: '#B75CFF'
             },
             screens: {
-                'xs': '320px'
+                'xs': '320px',
             }
         },
     },

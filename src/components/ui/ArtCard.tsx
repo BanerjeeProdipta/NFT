@@ -12,7 +12,7 @@ function ArtCard({
 }:props) {
   return (
     <div className="p-4 space-y-4 rounded-lg bg-white/10">
-      <img src={img} alt={img} />
+      <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
       <div className="flex flex-wrap justify-between">
         <div className="space-y-2">
           <p>
