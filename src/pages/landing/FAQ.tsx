@@ -6,7 +6,7 @@ function FAQ() {
     <div className="space-y-4">
       <div className="space-y-2">
         <h2 className="text-center">
-          Freaquently Asked
+          Frequently Asked
           <br />
           Question
         </h2>
