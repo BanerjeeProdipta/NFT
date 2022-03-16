@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Footer() {
   return (
     <div className="prose-p:text-sm prose-h4:font-bold prose-h4:text-xl prose-h4:text-white">
@@ -14,46 +16,68 @@ function Footer() {
         </div>
         <div className="space-y-3">
           <h4>About</h4>
-          <p>
+          <Link to="/" className="block">
             Product
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             Resource
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             Term & Condition
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             FAQ
-          </p>
+          </Link>
         </div>
         <div className="space-y-3">
           <h4>Company</h4>
-          <p>
+          <Link to="/" className="block">
             Our Team
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             Partner With Us
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             Privacy & Policy
-          </p>
-          <p>
+          </Link>
+          <Link to="/" className="block">
             Features
-          </p>
+          </Link>
         </div>
         <div className="space-y-3">
           <h4>Contact</h4>
-          <p>
-            +012 3456789
-          </p>
-          <p>
-            saquib@universalmachine.io
-          </p>
+          <p />
+          <div>
+            <a
+              href="tel: +01234567895"
+            >
+              <p>
+                +012 3456789
+              </p>
+            </a>
+          </div>
+          <div>
+
+            <a
+              href="mailto:saquib@universalmachine.io
+          "
+            >
+              <p>
+                saquib@universalmachine.io
+
+              </p>
+            </a>
+          </div>
           <div className="flex space-x-6">
-            <img src="/image/footer/youtube.png" alt="youtube" />
-            <img src="/image/footer/discord.png" alt="discord" />
-            <img src="/image/footer/instagram.png" alt="instagram" />
+            <Link to="/" className="block">
+              <img src="/image/footer/youtube.png" alt="youtube" />
+            </Link>
+            <Link to="/" className="block">
+              <img src="/image/footer/discord.png" alt="discord" />
+            </Link>
+            <Link to="/" className="block">
+              <img src="/image/footer/instagram.png" alt="instagram" />
+            </Link>
           </div>
         </div>
       </div>
