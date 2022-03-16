@@ -11,29 +11,31 @@ function ArtCard({
   img, author, price, name,
 }:props) {
   return (
-    <div className="p-4 space-y-4 rounded-lg bg-white/10">
-      <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
-      <div className="flex flex-wrap justify-between">
-        <div className="space-y-2">
-          <p>
-            @
-            {author}
-          </p>
-          <h4 className="text-xl font-semibold">{name}</h4>
+    <div className="group">
+      <div className="p-4 space-y-4 transition rounded-lg shadow-lg bg-white/10 group-hover:bg-white/50">
+        <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
+        <div className="flex flex-wrap justify-between">
+          <div className="space-y-2">
+            <p>
+              @
+              {author}
+            </p>
+            <h4 className="text-xl font-semibold">{name}</h4>
+          </div>
+          <div className="text-right not-prose">
+            <p className="text-sm font-normal">
+              Current Bid
+            </p>
+            <h4 className="text-xl font-semibold text-white">
+              {price}
+            </h4>
+          </div>
         </div>
-        <div>
-          <p className="text-xs not-prose">
-            Current Bid
-          </p>
-          <h4 className="text-xl font-semibold text-right">
-            {price}
-          </h4>
-        </div>
+        <PrimaryButton
+          text="Place a bid"
+          className="w-full border border-transparent group-hover:border-primaryDark group-hover:bg-none group-hover:text-primaryDark"
+        />
       </div>
-      <PrimaryButton
-        text="Place a bid"
-        className="w-full"
-      />
     </div>
   )
 }

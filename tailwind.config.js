@@ -4,9 +4,6 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         extend: {
-            fontFamily: {
-                'open-sans': '"Open Sans", Helvetica, Arial, sans-serif',
-            },
             colors: {
                 green: colors.emerald,
                 blue: colors.blue,
