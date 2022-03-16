@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
-import { NavLink } from 'react-router-dom'
 import CustomModal from './CustomModal'
 
 function Navbar() {
