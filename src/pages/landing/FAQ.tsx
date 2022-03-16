@@ -5,11 +5,13 @@ function FAQ() {
   return (
     <div className="space-y-4">
       <div className="space-y-2">
-        <h2 className="text-center">Featured Artworks</h2>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur
+        <h2 className="text-center">
+          Freaquently Asked
           <br />
-          adipiscing elit.
+          Question
+        </h2>
+        <p className="text-center">
+          Wanna Ask Something?
         </p>
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
