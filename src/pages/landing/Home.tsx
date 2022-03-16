@@ -23,7 +23,7 @@ function Home() {
         </div>
         <div className="flex flex-wrap items-center justify-between">
           {homeData.map((item) => (
-            <div key={item.title} className="px-2">
+            <div key={item.title} className="px-2 mb-2">
               <h3 className="text-2xl font-bold lg:text-3xl">{item.count}</h3>
               <p>
                 {item.title}
