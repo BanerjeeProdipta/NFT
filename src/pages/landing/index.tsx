@@ -1,5 +1,6 @@
 import AboutUs from './AboutUs'
 import Collection from './Collection'
+import FAQ from './FAQ'
 import FeaturedArts from './FeaturedArts'
 import Home from './Home'
 import Sponsored from './Sponsored'
@@ -14,6 +15,7 @@ function Landing() {
       <Collection />
       <FeaturedArts />
       <TopCreator />
+      <FAQ />
     </div>
   )
 }
