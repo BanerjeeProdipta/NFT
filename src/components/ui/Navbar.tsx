@@ -13,11 +13,11 @@ function Navbar() {
   const handleModalOnClose = () => setShowSearchModal(false)
 
   return (
-    <nav className="sticky top-0 z-50">
+    <nav className="container z-50 px-4 mx-auto">
       <div
         ref={ref}
+        className="max-w-6xl py-2 relative overflow-hidden transition-all duration-500 ease-in-out md:min-h-[80px]"
         style={{ maxHeight: isOpen && ref.current ? ref.current.scrollHeight : 50 }}
-        className="py-2 relative overflow-hidden transition-all duration-500 ease-in-out md:min-h-[100px]"
       >
         <div className="flex items-center justify-between">
           <div>
@@ -89,7 +89,7 @@ function Navbar() {
         </div>
 
         {/* small screen links STARTS */}
-        <div className="my-4 space-y-2 md:hidden">
+        <div className="p-2 my-4 space-y-2 rounded-lg md:hidden bg-bgRight">
           <button
             type="button"
             className="relative w-full p-1"
