@@ -13,7 +13,7 @@ function CreatorCard({
   return (
     <div className="group">
       <div className="pb-4 rounded-lg group-hover:bg-white/50 bg-white/10">
-        <img src={banner} alt={banner} className="rounded-t" />
+        <img src={banner} alt={banner} className="object-fill w-full rounded-t" />
         <div className="flex items-center justify-center -mt-10">
           <img src={img} alt={img} className="w-20 h-20 rounded-full" />
         </div>
