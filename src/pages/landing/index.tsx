@@ -1,4 +1,5 @@
 import AboutUs from './AboutUs'
+import CallToAction from './CallToAction'
 import Collection from './Collection'
 import FAQ from './FAQ'
 import FeaturedArts from './FeaturedArts'
@@ -16,6 +17,7 @@ function Landing() {
       <FeaturedArts />
       <TopCreator />
       <FAQ />
+      <CallToAction />
     </div>
   )
 }
