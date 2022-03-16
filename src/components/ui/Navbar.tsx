@@ -21,12 +21,12 @@ function Navbar() {
       >
         <div className="flex items-center justify-between">
           <div>
-            <NavLink onClick={handleLinkOnClick} to="/">
+            <a href="#home">
               <h1 className="text-2xl font-bold">
                 Psycho
                 <span className="text-primaryLight">Art</span>
               </h1>
-            </NavLink>
+            </a>
           </div>
 
           <button type="button" className="relative hidden mx-8 md:block" onClick={() => setShowSearchModal(true)}>
