@@ -7,7 +7,7 @@ function Collection() {
   const [selected, setSelected] = useState('Sport')
 
   return (
-    <div className="space-y-4">
+    <div id="collections" className="space-y-4">
       <div className="space-y-2">
         <h2 className="text-center">Collection</h2>
         <p className="text-center">
