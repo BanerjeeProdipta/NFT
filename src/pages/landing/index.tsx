@@ -1,4 +1,5 @@
 import AboutUs from './AboutUs'
+import Collection from './Collection'
 import Home from './Home'
 import Sponsored from './Sponsored'
 
@@ -8,6 +9,7 @@ function Landing() {
       <Home />
       <Sponsored />
       <AboutUs />
+      <Collection />
     </div>
   )
 }

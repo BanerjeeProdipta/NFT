@@ -3,7 +3,7 @@ import homeData from '../../utils/data/homeData'
 
 function Home() {
   return (
-    <div className="items-center justify-between space-y-6 lg:flex lg:space-y-0">
+    <div className="items-center justify-between w-full space-y-6 lg:flex lg:space-y-0">
       <div className="space-y-4 lg:w-1/2 lg:pr-24">
         <h1 className="text-5xl font-bold leading-normal">
           Create, Sell & Collect Your Own Creative NFT
@@ -23,7 +23,7 @@ function Home() {
         </div>
         <div className="flex items-center justify-between">
           {homeData.map((item) => (
-            <div key={item.title}>
+            <div key={item.title} className="px-2">
               <h3 className="text-3xl font-bold">{item.count}</h3>
               <p>
                 {item.title}
@@ -33,7 +33,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 sm:flex">
+      <div className="flex-col items-center justify-center w-full space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 sm:flex">
         <div className="flex flex-col justify-center space-y-4">
           <img src="/image/home/1.png" alt="art 1" />
           <img src="/image/home/2.png" alt="art 2" />
