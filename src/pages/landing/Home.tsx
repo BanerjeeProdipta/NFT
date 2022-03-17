@@ -4,8 +4,8 @@ import homeData from '../../utils/data/homeData'
 function Home() {
   return (
     <div id="home" className="items-center justify-between w-full space-y-6 lg:flex lg:space-y-0 lg:space-x-8">
-      <div className="space-y-4 lg:pr-12 lg:py-4">
-        <h1 className="text-4xl font-bold tracking-wide lg:text-5xl">
+      <div className="space-y-4 lg:pr-12 lg:py-8">
+        <h1 className="text-4xl leading-[3rem] font-bold lg:leading-[4rem] tracking-wide lg:text-5xl">
           Create, Sell & Collect Your Own Creative NFT
         </h1>
         <p>
