@@ -3,12 +3,15 @@ import homeData from '../../utils/data/homeData'
 
 function Home() {
   return (
-    <div id="home" className="items-center justify-between w-full space-y-6 lg:flex lg:space-y-0 lg:space-x-8">
+    <div id="home" className="items-center justify-between w-full space-y-6 lg:flex lg:space-y-0">
       <div className="space-y-4 lg:pr-12 lg:py-8">
-        <h1 className="text-4xl leading-[3rem] font-bold lg:leading-[4rem] tracking-wide lg:text-5xl">
-          Create, Sell & Collect Your Own Creative NFT
+        <h1 className="text-4xl leading-[3rem] font-bold lg:leading-[3.5rem] tracking-wide lg:text-5xl">
+          Create, Sell &
+          <br />
+          Collect Your Own
+          Creative NFT
         </h1>
-        <p>
+        <p className="max-w-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit.
         </p>
         <div className="flex flex-wrap items-center py-4 space-x-2 xs:space-x-4">
@@ -21,9 +24,9 @@ function Home() {
           </button>
 
         </div>
-        <div className="flex flex-wrap items-center justify-between">
+        <div className="flex flex-wrap items-center justify-between max-w-xl">
           {homeData.map((item) => (
-            <div key={item.title} className="px-2 mb-2">
+            <div key={item.title} className="px-2 mb-2 text-center">
               <h3 className="text-2xl font-bold lg:text-3xl">{item.count}</h3>
               <p>
                 {item.title}
