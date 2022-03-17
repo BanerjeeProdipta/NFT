@@ -1,3 +1,4 @@
+import Fade from 'react-reveal/Fade'
 import AboutUs from './AboutUs'
 import CallToAction from './CallToAction'
 import Collection from './Collection'
@@ -11,7 +12,9 @@ import TopCreator from './TopCreator'
 function Landing() {
   return (
     <div className="space-y-20 lg:space-y-32">
-      <Home />
+      <Fade up>
+        <Home />
+      </Fade>
       <Sponsored />
       <AboutUs />
       <Collection />
