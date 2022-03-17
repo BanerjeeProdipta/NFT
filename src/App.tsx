@@ -13,7 +13,7 @@ function App() {
       }}
     >
       <BrowserRouter>
-        <div className="prose-p:font-medium prose-p:text-xl text-white/50 prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
+        <div className="prose-p:font-medium prose-p:text-xl text-white/50 prose-h2:leading-[3rem] prose-headings:text-white prose-h2:font-[Roboto] prose-h2:font-bold prose-h2:text-4xl">
           <div
             className="fixed w-full"
             style={{ backdropFilter: 'blur(6px)' }}

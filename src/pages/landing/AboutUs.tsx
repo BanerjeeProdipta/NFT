@@ -1,16 +1,13 @@
 import PrimaryButton from '../../components/ui/PrimaryButton'
+import SectionHeader from '../../components/ui/SectionHeader'
 
 function AboutUs() {
   return (
     <div className="space-y-8 text-center">
-      <div className="space-y-2">
-        <h2 className="text-center">About Us</h2>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur
-          <br />
-          adipiscing elit.
-        </p>
-      </div>
+      <SectionHeader
+        title="About Us"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
       <div className="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-x-8 md:space-y-0">
         <img src="image/aboutUs/1.png" alt="about us 1" className="object-scale-down w-full md:max-w-md xs:object-fill" />
         <div className="space-y-4 text-left lg:w-1/2">
