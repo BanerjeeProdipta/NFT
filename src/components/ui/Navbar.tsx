@@ -15,7 +15,7 @@ function Navbar() {
     <nav className="z-50 justify-center px-4 lg:container lg:mx-auto lg:flex">
       <div
         ref={ref}
-        className="max-w-6xl py-2 relative overflow-hidden transition-all duration-500 delay-150 ease-in-out md:min-h-[80px]"
+        className="max-w-6xl py-4 relative overflow-hidden transition-all duration-500 delay-150 ease-in-out md:min-h-[80px]"
         style={{ maxHeight: isOpen && ref.current ? 800 : 50 }}
       >
         <div className="flex items-center justify-between">
@@ -23,7 +23,7 @@ function Navbar() {
             <a href="#home">
               <h1 className="text-2xl font-bold">
                 Psycho
-                <span className="text-primaryLight">Art</span>
+                <span className="text-transparent bg-gradient-to-tr to-primaryLight via-primaryLight from-primaryDark bg-clip-text">Art</span>
               </h1>
             </a>
           </div>
@@ -63,7 +63,7 @@ function Navbar() {
               </a>
               <a
                 href="#select-wallet"
-                className="px-4 py-1 font-medium text-white transition duration-1000 rounded-md lg:px-4 whitespace-nowrap bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr"
+                className="px-4 py-2 font-medium text-white transition duration-1000 rounded-md lg:px-4 whitespace-nowrap bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr"
               >
                 Select Wallet
               </a>
