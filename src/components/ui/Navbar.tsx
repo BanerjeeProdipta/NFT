@@ -15,8 +15,8 @@ function Navbar() {
     <nav className="z-50 justify-center px-4 lg:container lg:mx-auto lg:flex">
       <div
         ref={ref}
-        className="max-w-6xl py-2 relative overflow-hidden transition-all duration-500 ease-in-out md:min-h-[80px]"
-        style={{ maxHeight: isOpen && ref.current ? ref.current.scrollHeight : 50 }}
+        className="max-w-6xl py-2 relative overflow-hidden transition-all duration-500 delay-150 ease-in-out md:min-h-[80px]"
+        style={{ maxHeight: isOpen && ref.current ? 800 : 50 }}
       >
         <div className="flex items-center justify-between">
           <div>
@@ -74,7 +74,6 @@ function Navbar() {
           <div className="flex justify-end flex-1 md:hidden">
             <button
               type="button"
-              tabIndex={-1}
               className="p-1 text-white transition duration-500 ease-in-out border border-transparent border-white rounded cursor-pointer md:hidden"
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -88,54 +87,57 @@ function Navbar() {
         </div>
 
         {/* small screen links STARTS */}
-        <div className="p-2 my-4 space-y-2 rounded-lg md:hidden bg-bgRight">
-          <button
-            type="button"
-            className="relative w-full p-1"
-            onClick={() => {
-              setIsOpen(false)
-              setShowSearchModal(true)
-            }}
-          >
-            <div className="absolute top-3 left-3">
-              <AiOutlineSearch size={22} />
-            </div>
-            <input
-              type="text"
-              className="flex w-full p-2 pl-10 text-white rounded-md flex-0 focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10 w "
-              placeholder="Search items and collections"
-            />
-          </button>
-          <a
-            onClick={handleLinkOnClick}
-            href="#collections"
-            className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
-          >
-            Collections
-          </a>
-          <a
-            onClick={handleLinkOnClick}
-            href="#featured-arts"
-            className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
-          >
-            Feature
-          </a>
-          <a
-            onClick={handleLinkOnClick}
-            href="#faq"
-            className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
-          >
-            FAQ
-          </a>
-          <a
-            onClick={handleLinkOnClick}
-            href="#select-wallet"
-            className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
-          >
-            Select Wallet
-          </a>
+        { isOpen
+       && (
+       <div className="p-2 my-4 space-y-2 rounded-lg md:hidden bg-bgRight">
+         <button
+           type="button"
+           className="relative w-full p-1"
+           onClick={() => {
+             setIsOpen(false)
+             setShowSearchModal(true)
+           }}
+         >
+           <div className="absolute top-3 left-3">
+             <AiOutlineSearch size={22} />
+           </div>
+           <input
+             type="text"
+             className="flex w-full p-2 pl-10 text-white rounded-md flex-0 focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10 w "
+             placeholder="Search items and collections"
+           />
+         </button>
+         <a
+           onClick={handleLinkOnClick}
+           href="#collections"
+           className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
+         >
+           Collections
+         </a>
+         <a
+           onClick={handleLinkOnClick}
+           href="#featured-arts"
+           className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
+         >
+           Feature
+         </a>
+         <a
+           onClick={handleLinkOnClick}
+           href="#faq"
+           className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
+         >
+           FAQ
+         </a>
+         <a
+           onClick={handleLinkOnClick}
+           href="#select-wallet"
+           className="block p-2 font-semibold transition-all duration-300 rounded-md hover:text-white hover:bg-primaryLight hover:opacity-75"
+         >
+           Select Wallet
+         </a>
 
-        </div>
+       </div>
+       )}
         {/* small screen links ENDS */}
 
       </div>
