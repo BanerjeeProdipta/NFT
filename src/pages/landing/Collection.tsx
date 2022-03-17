@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ArtCard from '../../components/ui/ArtCard'
 import PrimaryButton from '../../components/ui/PrimaryButton'
+import SectionHeader from '../../components/ui/SectionHeader'
 import { arts, tabItems } from '../../utils/data/collectionData'
 
 function Collection() {
@@ -8,14 +9,10 @@ function Collection() {
 
   return (
     <div id="collections" className="space-y-4">
-      <div className="space-y-2">
-        <h2 className="text-center">Collection</h2>
-        <p className="text-center">
-          Lorem ipsum dolor sit amet, consectetur
-          <br />
-          adipiscing elit.
-        </p>
-      </div>
+      <SectionHeader
+        title="Collection"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      />
 
       <div className="justify-between text-white sm:flex">
         {tabItems.map((item) => (

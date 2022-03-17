@@ -17,31 +17,31 @@ function Footer() {
         <div className="space-y-3">
           <h4>About</h4>
           <Link to="/" className="block">
-            Product
+            <p>Product</p>
           </Link>
           <Link to="/" className="block">
-            Resource
+            <p>Resource</p>
           </Link>
           <Link to="/" className="block">
-            Term & Condition
+            <p>Term & Condition</p>
           </Link>
           <Link to="/" className="block">
-            FAQ
+            <p>FAQ</p>
           </Link>
         </div>
         <div className="space-y-3">
           <h4>Company</h4>
           <Link to="/" className="block">
-            Our Team
+            <p>Our Team</p>
           </Link>
           <Link to="/" className="block">
-            Partner With Us
+            <p>Partner With Us</p>
           </Link>
           <Link to="/" className="block">
-            Privacy & Policy
+            <p>Privacy & Policy</p>
           </Link>
           <Link to="/" className="block">
-            Features
+            <p>Features</p>
           </Link>
         </div>
         <div className="space-y-3">
@@ -57,14 +57,11 @@ function Footer() {
             </a>
           </div>
           <div>
-
             <a
-              href="mailto:saquib@universalmachine.io
-          "
+              href="mailto:saquib@universalmachine.io"
             >
               <p>
                 saquib@universalmachine.io
-
               </p>
             </a>
           </div>
