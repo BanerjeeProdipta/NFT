@@ -6,12 +6,16 @@ It's built using React TypeScript and Tailwind CSS.
 
 
 ## App Screenshots
-<img src="/AppScreenShot.png" alt="App Screenshot" >
-# Getting Started with Create React App
+<img src="https://github.com/BanerjeeProdipta/NFT/blob/main/public/AppScreenShot.png" alt="App Screenshot" >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 ## Thought Process
 I wanted to create a marketplace for NFTs. I saw the Figma Design then set up a React project in TypeScript. I installed the necessary packages to get started the app. I build the layout first then I divided the UI section wise into different components and styled them with Tailwind CSS. I also added a few animated components to the app to make it more interactive.
+
+
+## Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Build Instructions
 
