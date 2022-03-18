@@ -4,7 +4,10 @@ import { Outlet } from 'react-router-dom'
 function Layout() {
   return (
     <Suspense fallback={(
-      <div className="flex items-center justify-center h-screen">
+      <div
+        className="flex items-center justify-center"
+        style={{ height: 'calc(100vh - 300px)' }}
+      >
         <h1 className="text-3xl font-bold lg:text-5xl animate-pulse">
           Psycho
           <span className="text-transparent bg-gradient-to-tr to-primaryLight via-primaryLight from-primaryDark bg-clip-text">Art</span>

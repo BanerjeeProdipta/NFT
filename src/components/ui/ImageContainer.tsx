@@ -14,7 +14,7 @@ function ImageContainer({ src, alt, className }:props) {
     <img
       src={src}
       alt={alt}
-      className={`${className} transition duration-300 ease-in-out ${loading ? 'bg-gray-700 animate-pulse' : 'opacity-100'}`}
+      className={`${className} transition duration-300 ease-in-out ${loading ? 'bg-gray-600/40 animate-pulse rounded-md' : 'opacity-100'}`}
       onLoad={() => setLoading(false)}
     />
 

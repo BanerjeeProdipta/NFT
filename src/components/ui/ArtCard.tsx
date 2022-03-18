@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { item } from '../../utils/animation'
+import ImageContainer from './ImageContainer'
 import PrimaryButton from './PrimaryButton'
 
 interface props{
@@ -19,7 +20,7 @@ function ArtCard({
       className="transition duration-300 group hover:scale-105"
     >
       <div className="p-4 space-y-4 transition rounded-lg shadow-lg bg-white/10 group-hover:bg-white/50">
-        <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
+        <ImageContainer src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
         <div className="flex flex-wrap justify-between">
           <div className="space-y-2">
             <p>
