@@ -1,10 +1,30 @@
-# Getting Started with Create React App
+<h2 style="margin-bottom: 0;" align="center">NFT Marketplace</h2>
+<h3 style="margin-top: 0;" align="center">PsychoArt</h3>
+<p align="center">
+It's built using React TypeScript and Tailwind CSS.
+</p>
+
+
+## App Screenshots
+<img src="https://github.com/BanerjeeProdipta/NFT/blob/main/public/AppScreenShot.png" alt="App Screenshot" >
+
+
+## Thought Process
+I wanted to create a marketplace for NFTs. I saw the Figma Design then set up a React project in TypeScript. I installed the necessary packages to get started the app. I build the layout first then I divided the UI section wise into different components and styled them with Tailwind CSS. I also added a few animated components to the app to make it more interactive.
+
+
+## Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Build Instructions
+
 
 In the project directory, you can run:
+
+### `yarn`
+
+To run the project in development mode:
 
 ### `yarn start`
 
@@ -46,3 +66,44 @@ yarn prettier --write
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Libraries/Dependencies
+
+[React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+
+[React Router](https://reacttraining.com/react-router/web/guides/quick-start) - A routing library for React.
+
+[Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for React.
+
+
+[Framer Motion](https://www.framer.com/motion/) - A library for React that provides a declarative way to animate components.
+
+
+## License
+```
+MIT License
+
+Copyright (c) 2020 Palao Corona
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+
+

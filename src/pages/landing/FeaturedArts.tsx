@@ -1,4 +1,5 @@
 import ArtCard from '../../components/ui/ArtCard'
+import MotionContainer from '../../components/ui/MotionContainer'
 import SectionHeader from '../../components/ui/SectionHeader'
 import featuredArts from '../../utils/data/featuredArts'
 
@@ -9,7 +10,9 @@ function FeaturedArts() {
         title="Featured Artworks"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <MotionContainer
+        className="grid grid-cols-1 gap-4 lg:grid-cols-3"
+      >
         {featuredArts.map((art) => (
           <ArtCard
             key={art.img}
@@ -19,7 +22,7 @@ function FeaturedArts() {
             name={art.name}
           />
         ))}
-      </div>
+      </MotionContainer>
     </div>
   )
 }

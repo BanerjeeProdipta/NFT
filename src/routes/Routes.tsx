@@ -1,7 +1,9 @@
+import React from 'react'
 import { useRoutes } from 'react-router-dom'
 import Layout from '../layout'
-import Landing from '../pages/landing'
-import NotFound from '../pages/notFound'
+
+const Landing = React.lazy(() => import('../pages/landing'))
+const NotFound = React.lazy(() => import('../pages/notFound'))
 
 function Routes() {
   const routes = {

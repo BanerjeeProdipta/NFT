@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+import { item } from '../../utils/animation'
+import ImageContainer from './ImageContainer'
 import PrimaryButton from './PrimaryButton'
 
 interface props{
@@ -11,9 +14,15 @@ function ArtCard({
   img, author, price, name,
 }:props) {
   return (
-    <div className="group">
+    <motion.li
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+      variants={item}
+      className="transition duration-300 group"
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.90 }}
+    >
       <div className="p-4 space-y-4 transition rounded-lg shadow-lg bg-white/10 group-hover:bg-white/50">
-        <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
+        <ImageContainer src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
         <div className="flex flex-wrap justify-between">
           <div className="space-y-2">
             <p>
@@ -36,7 +45,7 @@ function ArtCard({
           className="w-full border border-transparent group-hover:border-primaryDark group-hover:bg-none group-hover:text-primaryDark"
         />
       </div>
-    </div>
+    </motion.li>
   )
 }
 

@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import CustomModal from './CustomModal'
 
 function Navbar() {
@@ -12,20 +13,23 @@ function Navbar() {
   const handleModalOnClose = () => setShowSearchModal(false)
 
   return (
-    <nav className="z-50 justify-center px-4 lg:container lg:mx-auto lg:flex">
+    <nav
+      style={{ backdropFilter: 'blur(2px)' }}
+      className="sticky top-0 z-50 w-full p-4"
+    >
       <div
         ref={ref}
-        className="max-w-6xl py-4 relative overflow-hidden transition-all duration-500 delay-150 ease-in-out md:min-h-[80px]"
+        className="relative overflow-hidden transition-all duration-500 delay-150 ease-in-out md:min-h-[80px]"
         style={{ maxHeight: isOpen && ref.current ? 800 : 50 }}
       >
         <div className="flex items-center justify-between">
           <div>
-            <a href="#home">
+            <Link to="/" onClick={() => window.scrollTo(0, 0)}>
               <h1 className="text-2xl font-bold">
                 Psycho
                 <span className="text-transparent bg-gradient-to-tr to-primaryLight via-primaryLight from-primaryDark bg-clip-text">Art</span>
               </h1>
-            </a>
+            </Link>
           </div>
 
           <button type="button" className="relative hidden mx-8 md:block" onClick={() => setShowSearchModal(true)}>
@@ -34,7 +38,7 @@ function Navbar() {
             </div>
             <input
               type="text"
-              className="flex p-2 pl-10 text-xl text-white rounded-md lg:w-full flex-0 md:w-4 focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10"
+              className="flex p-2 pl-10 text-xl text-white rounded-md flex-0 md:w-4 xl:w-full focus:outline-none focus:ring-2 focus:border-transparent ring-primaryLight bg-white/10"
               placeholder="Search items and collections"
             />
           </button>
