@@ -84,7 +84,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ```
 MIT License
 
-Copyright (c) 2020 Palao Corona
+Copyright (c) 2022 Banerjee, Prodipta
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
