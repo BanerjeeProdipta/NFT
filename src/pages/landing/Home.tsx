@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import PrimaryButton from '../../components/ui/PrimaryButton'
+import { container, item } from '../../utils/animation'
 import homeData from '../../utils/data/homeData'
 
 function Home() {
@@ -28,36 +29,19 @@ function Home() {
         <motion.ul
           initial="hidden"
           animate="visible"
-          variants={
-             {
-               hidden: { opacity: 0 },
-               visible: {
-                 opacity: 1,
-                 transition: {
-                   delayChildren: 0.7,
-                   staggerChildren: 0.5,
-                 },
-               },
-             }
-          }
+          variants={container}
           className="flex flex-wrap items-center justify-between max-w-xl list-none"
         >
-          {homeData.map((item) => (
+          {homeData.map((data) => (
             <motion.li
-              key={item.title}
+              key={data.title}
               transition={{ duration: 0.2, ease: 'easeInOut' }}
-              variants={{
-                hidden: { y: 20, opacity: 0 },
-                visible: {
-                  y: 0,
-                  opacity: 1,
-                },
-              }}
+              variants={item}
               className="px-2 mb-2 text-center"
             >
-              <h3 className="text-2xl font-bold lg:text-3xl">{item.count}</h3>
+              <h3 className="text-2xl font-bold lg:text-3xl">{data.count}</h3>
               <p>
-                {item.title}
+                {data.title}
               </p>
             </motion.li>
           ))}

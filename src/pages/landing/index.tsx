@@ -1,4 +1,4 @@
-import MotionDiv from '../../components/ui/MotionDiv'
+import MotionSectionReveal from '../../components/ui/MotionSectionReveal'
 import AboutUs from './AboutUs'
 import CallToAction from './CallToAction'
 import Collection from './Collection'
@@ -12,41 +12,41 @@ import TopCreator from './TopCreator'
 function Landing() {
   return (
     <div className="space-y-20 lg:space-y-32">
-      <MotionDiv>
+      <MotionSectionReveal>
         <Home />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <Sponsored />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <AboutUs />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <Collection />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <FeaturedArts />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <TopCreator />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <FAQ />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <CallToAction />
-      </MotionDiv>
+      </MotionSectionReveal>
 
-      <MotionDiv>
+      <MotionSectionReveal>
         <Footer />
-      </MotionDiv>
+      </MotionSectionReveal>
 
     </div>
   )

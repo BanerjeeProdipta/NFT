@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+import { item } from '../../utils/animation'
 import PrimaryButton from './PrimaryButton'
 
 interface props{
@@ -14,7 +16,11 @@ function CreatorCard({
   banner, img, name, bio, isFollowed, onFollow, onUnfollow,
 }:props): JSX.Element {
   return (
-    <div className="transition duration-300 group hover:scale-105">
+    <motion.li
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+      variants={item}
+      className="transition duration-300 group hover:scale-105"
+    >
       <div className="pb-4 transition rounded-lg group-hover:bg-white/50 bg-white/10">
         <img src={banner} alt={banner} className="object-fill w-full rounded-t" />
         <div className="flex items-center justify-center -mt-10">
@@ -43,7 +49,7 @@ function CreatorCard({
 
         </div>
       </div>
-    </div>
+    </motion.li>
   )
 }
 

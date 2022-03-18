@@ -21,7 +21,7 @@ interface props{
   children: ReactNode;
 }
 
-function MotionDiv({ children }:props) {
+function MotionSectionReveal({ children }:props) {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -43,4 +43,4 @@ function MotionDiv({ children }:props) {
   )
 }
 
-export default MotionDiv
+export default MotionSectionReveal
