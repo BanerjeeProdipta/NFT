@@ -24,8 +24,6 @@ function AboutUs() {
             conubia nostra, per inceptos himenaeos.
             Praesent auctor purus luctus enim egestas,
             ac scelerisque ante pulvinar.
-            {' '}
-
           </p>
           <PrimaryButton text="Show more" />
 

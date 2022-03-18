@@ -11,7 +11,7 @@ function ArtCard({
   img, author, price, name,
 }:props) {
   return (
-    <div className="group">
+    <div className="transition duration-300 group hover:scale-105">
       <div className="p-4 space-y-4 transition rounded-lg shadow-lg bg-white/10 group-hover:bg-white/50">
         <img src={img} alt={img} className="object-scale-down w-full xs:object-fill" />
         <div className="flex flex-wrap justify-between">

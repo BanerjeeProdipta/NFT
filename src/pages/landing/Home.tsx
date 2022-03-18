@@ -38,16 +38,16 @@ function Home() {
 
       <div className="flex flex-row items-center justify-center w-full space-x-4 space-y-0 lg:justify-end">
         <div className="flex flex-col justify-center space-y-4">
-          <img src="/image/home/1.png" className="object-scale-down xs:object-fill" alt="art 1" />
-          <img src="/image/home/2.png" className="object-scale-down xs:object-fill" alt="art 2" />
-          <img src="/image/home/3.png" className="object-scale-down xs:object-fill" alt="art 3" />
+          <img src="/image/home/1.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 1" />
+          <img src="/image/home/2.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 2" />
+          <img src="/image/home/3.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 3" />
         </div>
         <div className="flex flex-col justify-center space-y-4">
-          <img src="/image/home/4.png" className="object-scale-down xs:object-fill" alt="art 4" />
-          <img src="/image/home/5.png" className="object-scale-down xs:object-fill" alt="art 5" />
-          <img src="/image/home/6.png" className="object-scale-down xs:object-fill" alt="art 6" />
+          <img src="/image/home/4.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 4" />
+          <img src="/image/home/5.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 5" />
+          <img src="/image/home/6.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 6" />
         </div>
-        <div className="flex flex-col justify-center"><img src="/image/home/7.png" className="object-scale-down xs:object-fill" alt="art 7" /></div>
+        <div className="flex flex-col justify-center"><img src="/image/home/7.png" className="object-scale-down transition duration-300 xs:object-fill hover:scale-105" alt="art 7" /></div>
       </div>
 
     </div>

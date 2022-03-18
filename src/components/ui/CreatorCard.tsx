@@ -14,7 +14,7 @@ function CreatorCard({
   banner, img, name, bio, isFollowed, onFollow, onUnfollow,
 }:props): JSX.Element {
   return (
-    <div className="group">
+    <div className="transition duration-300 group hover:scale-105">
       <div className="pb-4 transition rounded-lg group-hover:bg-white/50 bg-white/10">
         <img src={banner} alt={banner} className="object-fill w-full rounded-t" />
         <div className="flex items-center justify-center -mt-10">
