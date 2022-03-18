@@ -1,4 +1,4 @@
-import Fade from 'react-reveal/Fade'
+import MotionDiv from '../../components/ui/MotionDiv'
 import AboutUs from './AboutUs'
 import CallToAction from './CallToAction'
 import Collection from './Collection'
@@ -12,17 +12,42 @@ import TopCreator from './TopCreator'
 function Landing() {
   return (
     <div className="space-y-20 lg:space-y-32">
-      <Fade up>
+      <MotionDiv>
         <Home />
-      </Fade>
-      <Sponsored />
-      <AboutUs />
-      <Collection />
-      <FeaturedArts />
-      <TopCreator />
-      <FAQ />
-      <CallToAction />
-      <Footer />
+      </MotionDiv>
+
+      <MotionDiv>
+        <Sponsored />
+      </MotionDiv>
+
+      <MotionDiv>
+        <AboutUs />
+      </MotionDiv>
+
+      <MotionDiv>
+        <Collection />
+      </MotionDiv>
+
+      <MotionDiv>
+        <FeaturedArts />
+      </MotionDiv>
+
+      <MotionDiv>
+        <TopCreator />
+      </MotionDiv>
+
+      <MotionDiv>
+        <FAQ />
+      </MotionDiv>
+
+      <MotionDiv>
+        <CallToAction />
+      </MotionDiv>
+
+      <MotionDiv>
+        <Footer />
+      </MotionDiv>
+
     </div>
   )
 }
