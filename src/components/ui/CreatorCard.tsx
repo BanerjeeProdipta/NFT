@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { item } from '../../utils/animation'
+import ImageContainer from './ImageContainer'
 import PrimaryButton from './PrimaryButton'
 
 interface props{
@@ -22,9 +23,9 @@ function CreatorCard({
       className="transition duration-300 group hover:scale-105"
     >
       <div className="pb-4 transition rounded-lg group-hover:bg-white/50 bg-white/10">
-        <img src={banner} alt={banner} className="object-fill w-full rounded-t" />
+        <ImageContainer src={banner} alt={banner} className="object-fill w-full rounded-t" />
         <div className="flex items-center justify-center -mt-10">
-          <img src={img} alt={img} className="w-20 h-20 rounded-full" />
+          <ImageContainer src={img} alt={img} className="w-20 h-20 rounded-full" />
         </div>
         <div className="p-4 space-y-4 text-center not-prose">
           <h4 className="text-xl font-semibold text-white ">{name}</h4>

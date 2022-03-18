@@ -1,3 +1,4 @@
+import ImageContainer from '../../components/ui/ImageContainer'
 import PrimaryButton from '../../components/ui/PrimaryButton'
 import SectionHeader from '../../components/ui/SectionHeader'
 
@@ -9,7 +10,7 @@ function AboutUs() {
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
       <div className="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-x-8 md:space-y-0">
-        <img src="image/aboutUs/1.png" alt="about us 1" className="object-scale-down w-full md:max-w-md xs:object-fill" />
+        <ImageContainer src="image/aboutUs/1.png" alt="about us 1" className="object-scale-down w-full md:max-w-md xs:object-fill" />
         <div className="space-y-4 text-left lg:w-1/2">
           <h3 className="text-3xl font-bold">Get Popular NFT</h3>
           <p>
