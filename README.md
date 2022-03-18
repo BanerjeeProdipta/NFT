@@ -1,10 +1,26 @@
+<h2 style="margin-bottom: 0;" align="center">NFT Marketplace</h2>
+<h3 style="margin-top: 0;" align="center">PsychoArt</h3>
+<p align="center">
+It's built using React TypeScript and Tailwind CSS.
+</p>
+
+
+## App Screenshots
+<img src="/AppScreenShot.png" alt="App Screenshot" >
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Thought Process
+I wanted to create a marketplace for NFTs. I saw the Figma Design then set up a React project in TypeScript. I installed the necessary packages to get started the app. I build the layout first then I divided the UI section wise into different components and styled them with Tailwind CSS. I also added a few animated components to the app to make it more interactive.
 
-## Available Scripts
+## Build Instructions
+
 
 In the project directory, you can run:
+
+### `yarn`
+
+To run the project in development mode:
 
 ### `yarn start`
 
@@ -46,3 +62,14 @@ yarn prettier --write
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+## Libraries/Dependencies
+[React Router](https://reacttraining.com/react-router/web/guides/quick-start) - A routing library for React.
+
+[Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for React.
+
+
+[Framer Motion](https://www.framer.com/motion/) - A library for React that provides a declarative way to animate components.
+
+
