@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import PrimaryButton from '../../components/ui/PrimaryButton'
 import homeData from '../../utils/data/homeData'
 
@@ -24,16 +25,43 @@ function Home() {
           </button>
 
         </div>
-        <div className="flex flex-wrap items-center justify-between max-w-xl">
+        <motion.ul
+          initial="hidden"
+          animate="visible"
+          variants={
+             {
+               hidden: { opacity: 0 },
+               visible: {
+                 opacity: 1,
+                 transition: {
+                   delayChildren: 0.7,
+                   staggerChildren: 0.5,
+                 },
+               },
+             }
+          }
+          className="flex flex-wrap items-center justify-between max-w-xl list-none"
+        >
           {homeData.map((item) => (
-            <div key={item.title} className="px-2 mb-2 text-center">
+            <motion.li
+              key={item.title}
+              transition={{ duration: 0.2, ease: 'easeInOut' }}
+              variants={{
+                hidden: { y: 20, opacity: 0 },
+                visible: {
+                  y: 0,
+                  opacity: 1,
+                },
+              }}
+              className="px-2 mb-2 text-center"
+            >
               <h3 className="text-2xl font-bold lg:text-3xl">{item.count}</h3>
               <p>
                 {item.title}
               </p>
-            </div>
+            </motion.li>
           ))}
-        </div>
+        </motion.ul>
       </div>
 
       <div className="flex flex-row items-center justify-center w-full space-x-4 space-y-0 lg:justify-end">
