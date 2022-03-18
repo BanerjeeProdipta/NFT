@@ -6,7 +6,7 @@ interface props{
 
 function PrimaryButton({ text, className, onClick }:props) {
   return (
-    <button type="button" onClick={onClick} className={`px-4 py-2 text-white transition delay-150 rounded-lg bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr ${className}`}>{text}</button>
+    <button type="button" onClick={onClick} className={`px-4 py-2 duration-300 text-white transition delay-150 rounded-lg bg-gradient-to-bl from-primaryLight to-primaryDark hover:bg-gradient-to-tr ${className}`}>{text}</button>
   )
 }
 
