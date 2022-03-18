@@ -14,5 +14,6 @@ export const item = {
   visible: {
     y: 0,
     opacity: 1,
+
   },
 }

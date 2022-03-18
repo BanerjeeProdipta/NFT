@@ -1,12 +1,12 @@
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
+import Navbar from '../components/ui/Navbar'
 
 function Layout() {
   return (
     <Suspense fallback={(
       <div
-        className="flex items-center justify-center"
-        style={{ height: 'calc(100vh - 300px)' }}
+        className="flex items-center justify-center h-screen"
       >
         <h1 className="text-3xl font-bold lg:text-5xl animate-pulse">
           Psycho
@@ -15,7 +15,17 @@ function Layout() {
       </div>
 )}
     >
-      <Outlet />
+
+      <div className="lg:container lg:mx-auto">
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full max-w-6xl">
+            <Navbar />
+            <div className="px-4">
+              <Outlet />
+            </div>
+          </div>
+        </div>
+      </div>
     </Suspense>
 
   )
